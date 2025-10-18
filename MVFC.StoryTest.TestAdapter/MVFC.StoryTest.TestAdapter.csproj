@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>0.0.0</Version>
+		<Authors>Marcus Vinicius de Freitas Costa</Authors>
+		<Description>Test Adapter VSTest para CustomBdd Framework</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl></RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl></PackageProjectUrl>
+		<PackageTags>bdd;testing;vstest;adapter</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>icon.png</PackageIcon>
+		<SuppressDependenciesWhenPacking>false</SuppressDependenciesWhenPacking>
+		<IncludeBuildOutput>true</IncludeBuildOutput>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<DevelopmentDependency>false</DevelopmentDependency>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<Optimize>false</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="18.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="bin\Debug\net9.0\MVFC.StoryTest.TestAdapter.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="$(OutputPath)MVFC.StoryTest.dll" Pack="true" PackagePath="lib\net9.0\" />
+
+		<None Include="$(OutputPath)MVFC.StoryTest.TestAdapter.dll" Pack="true" PackagePath="build\net9.0\" />
+		<None Include="$(OutputPath)MVFC.StoryTest.dll" Pack="true" PackagePath="build\net9.0\" />
+
+		<None Include="MVFC.StoryTest.TestAdapter.targets" Pack="true" PackagePath="build\net9.0\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MVFC.StoryTest\MVFC.StoryTest.csproj" />
+	</ItemGroup>
+
+</Project>

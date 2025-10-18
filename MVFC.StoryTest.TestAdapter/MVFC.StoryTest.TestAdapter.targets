@@ -1,0 +1,8 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="$(MSBuildThisFileDirectory)MVFC.StoryTest.TestAdapter.dll"
+			  CopyToOutputDirectory="PreserveNewest" />
+		<None Include="$(MSBuildThisFileDirectory)MVFC.StoryTest.dll"
+			  CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+</Project>
