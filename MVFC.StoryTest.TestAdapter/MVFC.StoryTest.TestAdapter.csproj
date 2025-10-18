@@ -7,11 +7,11 @@
 		<Nullable>enable</Nullable>
 		<Version>0.0.0</Version>
 		<Authors>Marcus Vinicius de Freitas Costa</Authors>
-		<Description>Test Adapter VSTest para CustomBdd Framework</Description>
+		<Description>Adaptador para utilizacao do Framework enxuto para definição e execução de cenários de teste (Story Tests) em .NET, com suporte a BDD, hooks, steps síncronos e assíncronos, e integração flexível para automação de testes.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<RepositoryUrl></RepositoryUrl>
+		<RepositoryUrl>https://github.com/Marcus-V-Freitas/MVFC.StoryTest</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageProjectUrl></PackageProjectUrl>
+		<PackageProjectUrl>https://www.nuget.org/packages/MVFC.StoryTest.TestAdapter</PackageProjectUrl>
 		<PackageTags>bdd;testing;vstest;adapter</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>icon.png</PackageIcon>

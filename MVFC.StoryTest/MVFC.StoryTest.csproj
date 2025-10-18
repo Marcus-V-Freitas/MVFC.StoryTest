@@ -8,9 +8,9 @@
 		<Authors>Marcus Vinicius de Freitas Costa</Authors>
 		<Description>Framework enxuto para definição e execução de cenários de teste (Story Tests) em .NET, com suporte a BDD, hooks, steps síncronos e assíncronos, e integração flexível para automação de testes.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<RepositoryUrl></RepositoryUrl>
+		<RepositoryUrl>https://github.com/Marcus-V-Freitas/MVFC.StoryTest</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageProjectUrl></PackageProjectUrl>
+		<PackageProjectUrl>https://www.nuget.org/packages/MVFC.StoryTest</PackageProjectUrl>
 		<PackageTags>storytest;bdd;cenário;teste;automation;dotnet;hooks;steps;testes;extensível</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>icon.png</PackageIcon>
